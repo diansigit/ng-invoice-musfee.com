@@ -1,0 +1,17 @@
+<app-content-wrapper 
+  [title]="'Invoice'"
+  [showTitle]="true">
+  <form [formGroup]="formInvoice" (ngSubmit)="onFormInvoiceSubmit(formInvoice.value)">
+    <div class="form-group">
+      <label for="header">Header Invoice</label>
+      <textarea formControlName="header" class="form-control" id="header" placeholder="Header"></textarea>
+    </div>
+  
+    <div class="form-group">
+      <label for="number">No. Invoice</label>
+      <input formControlName="number" type="number" class="form-control" id="number" placeholder="No. Invoice">
+    </div>
+    
+    <button type="submit" class="btn btn-success">Simpan</button>
+  </form>
+</app-content-wrapper>

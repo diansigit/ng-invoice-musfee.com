@@ -1,0 +1,13 @@
+<app-content-wrapper [title]="'Pengaturan'">
+  <tabset #staticTabs >
+    <tab heading="Invoice" id="invoice">
+      <app-setting-invoice></app-setting-invoice>
+    </tab>
+    <tab heading="Jasa Pengiriman" id="courier">
+      <app-setting-courier></app-setting-courier>
+    </tab>
+    <tab heading="Jenis Pembayaran" id="payment">
+      <app-setting-payment></app-setting-payment>
+    </tab>
+  </tabset>
+</app-content-wrapper>

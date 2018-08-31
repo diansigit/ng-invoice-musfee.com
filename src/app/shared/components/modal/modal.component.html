@@ -1,0 +1,13 @@
+<div class="modal-header">
+  <h4 class="modal-title pull-left">{{ title }}</h4>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="onBtnCloseClick()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <ng-content></ng-content>
+</div>
+<div class="modal-footer">
+  <button *ngIf="showBtnCancel" type="button" class="btn btn-danger" (click)="onBtnCancelClick()">Batal</button>
+  <button *ngIf="showBtnSave" type="button" class="btn btn-success" [disabled]="!btnSaveValid" (click)="onBtnSaveClick()">Simpan</button>
+</div>

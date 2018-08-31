@@ -1,0 +1,19 @@
+[{
+  "uuid": "qp85gt-ax34rd-lj98uy-s3s5i1",
+  "name": "Sesi I",
+  "time_start": "14.00",
+  "time_end": "16.00",
+  "note": ""
+}, {
+  "uuid": "qp85gt-ax34rd-lj98uy-s3s5i2",
+  "name": "Sesi II",
+  "time_start": "16.00",
+  "time_end": "18.00",
+  "note": ""
+}, {
+  "uuid": "qp85gt-ax34rd-lj98uy-s3s5i3",
+  "name": "Sesi III",
+  "time_start": "18.30",
+  "time_end": "20.30",
+  "note": ""
+}]

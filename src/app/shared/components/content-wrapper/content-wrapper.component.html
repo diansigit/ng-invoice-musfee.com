@@ -1,0 +1,17 @@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h1 class="h2"><span *ngIf="showTitle" >{{ title }}</span></h1>
+  <div class="btn-toolbar mb-2 mb-md-0">
+    <button *ngIf="showButtonCreate" class="btn btn-sm btn-outline-secondary" (click)="onBtnCreateClick()">
+      <span class="fa fa-plus"></span> {{ createBtnTitle }}
+    </button>
+    <button *ngIf="showButtonPrint" class="btn btn-sm btn-outline-secondary ml-2" (click)="onBtnPrintClick()">
+      <span class="fa fa-print"></span> Cetak
+    </button>
+    <button *ngIf="showButtonAcademicYear" class="btn btn-sm btn-outline-secondary dropdown-toggle ml-2">
+      <span class="fa fa-calendar"></span> Tahun 2018 (Genap)
+    </button>
+  </div>
+</div>
+<div class="content-main">
+  <ng-content></ng-content>
+</div>

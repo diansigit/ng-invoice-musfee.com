@@ -1,0 +1,143 @@
+[{
+  "uuid": "qp85gt-ax34rd-lj98uy-5tud3n1",
+  "name": "Nama Siswa",
+  "school": "SD N Nya Siswa",
+  "class": 6,
+  "program": "reguler",
+  "courses": null
+}, {
+  "uuid": "qp85gt-ax34rd-lj98uy-5tud3n2",
+  "name": "Nama Siswa",
+  "school": "SD N Nya Siswa",
+  "class": 6,
+  "program": "reguler",
+  "courses": null
+}, {
+  "uuid": "qp85gt-ax34rd-lj98uy-5tud3n3",
+  "name": "Nama Siswa",
+  "school": "SD N Nya Siswa",
+  "class": 5,
+  "program": "reguler",
+  "courses": null
+}, {
+  "uuid": "qp85gt-ax34rd-lj98uy-5tud3n4",
+  "name": "Nama Siswa",
+  "school": "SMP N Nya Siswa",
+  "class": 4,
+  "program": "private",
+  "courses": [{
+      "uuid": "qp85gt-ax34rd-lj98uy-m4p3l1",
+      "name": "Matematika"
+    },
+    {
+      "uuid": "qp85gt-ax34rd-lj98uy-m4p3l5",
+      "name": "Bahasa Inggris"
+    }
+  ]
+}, {
+  "uuid": "qp85gt-ax34rd-lj98uy-5tud3n5",
+  "name": "Nama Siswa",
+  "school": "SMP N Nya Siswa",
+  "class": 9,
+  "program": "private",
+  "courses": [{
+      "uuid": "qp85gt-ax34rd-lj98uy-m4p3l1",
+      "name": "Matematika"
+    },
+    {
+      "uuid": "qp85gt-ax34rd-lj98uy-m4p3l5",
+      "name": "Bahasa Inggris"
+    }
+  ]
+}, {
+  "uuid": "qp85gt-ax34rd-lj98uy-5tud3n6",
+  "name": "Nama Siswa",
+  "school": "SMP N Nya Siswa",
+  "class": 9,
+  "program": "reguler",
+  "courses": null
+}, {
+  "uuid": "qp85gt-ax34rd-lj98uy-5tud3n7",
+  "name": "Nama Siswa",
+  "school": "SMP N Nya Siswa",
+  "class": 8,
+  "program": "reguler",
+  "courses": null
+}, {
+  "uuid": "qp85gt-ax34rd-lj98uy-5tud3n8",
+  "name": "Nama Siswa",
+  "school": "SMP N Nya Siswa",
+  "class": 8,
+  "program": "reguler",
+  "courses": null
+}, {
+  "uuid": "qp85gt-ax34rd-lj98uy-5tud3n9",
+  "name": "Nama Siswa",
+  "school": "SMP N Nya Siswa",
+  "class": 8,
+  "program": "reguler",
+  "courses": null
+}, {
+  "uuid": "qp85gt-ax34rd-lj98uy-5tud3n10",
+  "name": "Nama Siswa",
+  "school": "SMP N Nya Siswa",
+  "class": 8,
+  "program": "reguler",
+  "courses": null
+}, {
+  "uuid": "qp85gt-ax34rd-lj98uy-5tud3n11",
+  "name": "Nama Siswa",
+  "school": "SMP N Nya Siswa",
+  "class": 7,
+  "program": "reguler",
+  "courses": null
+}, {
+  "uuid": "qp85gt-ax34rd-lj98uy-5tud3n12",
+  "name": "Nama Siswa",
+  "school": "SMP N Nya Siswa",
+  "class": 7,
+  "program": "reguler",
+  "courses": null
+}, {
+  "uuid": "qp85gt-ax34rd-lj98uy-5tud3n13",
+  "name": "Nama Siswa",
+  "school": "SMP N Nya Siswa",
+  "class": 7,
+  "program": "reguler",
+  "courses": null
+}, {
+  "uuid": "qp85gt-ax34rd-lj98uy-5tud3n14",
+  "name": "Nama Siswa",
+  "school": "SMP N Nya Siswa",
+  "class": 7,
+  "program": "reguler",
+  "courses": null
+}, {
+  "uuid": "qp85gt-ax34rd-lj98uy-5tud3n16",
+  "name": "Nama Siswa",
+  "school": "SMP N Nya Siswa",
+  "class": 7,
+  "program": "reguler",
+  "courses": null
+}, {
+  "uuid": "qp85gt-ax34rd-lj98uy-5tud3n17",
+  "name": "Nama Siswa",
+  "school": "SMP N Nya Siswa",
+  "class": 7,
+  "program": "reguler",
+  "courses": null
+}, {
+  "uuid": "qp85gt-ax34rd-lj98uy-5tud3n18",
+  "name": "Nama Siswa",
+  "school": "SMP N Nya Siswa",
+  "class": 7,
+  "program": "reguler",
+  "courses": null
+}, {
+  "uuid": "qp85gt-ax34rd-lj98uy-5tud3n19",
+  "name": "Nama Siswa",
+  "school": "SMP N Nya Siswa",
+  "class": 7,
+  "program": "reguler",
+  "courses": null
+}]

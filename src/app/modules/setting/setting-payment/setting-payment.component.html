@@ -1,0 +1,21 @@
+<app-content-wrapper 
+  [title]="'Jenis pembayaran'">
+  <form [formGroup]="formPayment" (ngSubmit)="onFormPaymentSubmit(formPayment.value)">
+    <div class="input-group mb-3">
+      <input formControlName="name" type="text" class="form-control" placeholder="Nama jenis pembayaran" aria-label="Nama jenis pembayaran">
+      <div class="input-group-append">
+        <button class="btn btn-success" type="submit">Tambahkan</button>
+      </div>
+    </div>
+  </form>
+
+  <app-data-table 
+    [actionColumn]="true" 
+    [limitOptions]="false"
+    [searchOptions]="false"
+    [rows]="rows" 
+    [columns]="columns" 
+    (editClicked)="onBtnUpdateClick($event)"
+    (deleteClicked)="onBtnDeleteClick($event)">
+  </app-data-table>
+</app-content-wrapper>

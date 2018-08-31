@@ -1,0 +1,95 @@
+<app-content-wrapper 
+  [title]="'Buat Invoice'" 
+  [showButtonCreate]="true"
+  [createBtnTitle]="'Preview'"
+  [showButtonPrint]="true">
+  <div class="content-tab">
+    <tabset #staticTabs >
+      <tab 
+        *ngFor="let invoiceTab of invoiceTabs" 
+        [removable]="invoiceTab.removable"
+        (select)="onTabSelect($event)" 
+        id="{{ invoiceTab.id }}">
+        <ng-template tabHeading>
+          <span [innerHTML]="invoiceTab.title"></span>
+        </ng-template>
+
+        <form class="mt-4" [formGroup]="formInvoice">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <div class="form-group form-row">
+                <label for="invoice_no" class="col-xs-12 col-sm-3 col-form-label">No. transaksi</label>
+                <div class="col-xs-12 col-sm-9">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">INV/MF/20180721/</span>
+                    </div>
+                    <input formControlName="number" type="number" class="form-control" id="invoice_no" placeholder="No. transaksi">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group form-row">
+                <label for="payment" class="col-xs-12 col-sm-3 col-form-label">Pembayaran</label>
+                <div class="col-xs-12 col-sm-9">
+                  <app-form-select 
+                    [id]="'payment'"
+                    [options]="paymentOpts"
+                    (optionSelected)="onOptionsPaymentSelected($event)"
+                  ></app-form-select>
+                </div>
+              </div>
+              <div class="form-group form-row">
+                <label for="date" class="col-xs-12 col-sm-3 col-form-label">Tanggal</label>
+                <div class="col-xs-12 col-sm-9">
+                  <input formControlName="date" type="text" class="form-control" placeholder="Tanggal" bsDatepicker [bsConfig]="{ dateInputFormat: 'DD-MM-YYYY' }" />
+                </div>
+              </div>
+              <div class="form-group form-row">
+                <label for="courier" class="col-xs-12 col-sm-3 col-form-label">Ekspedisi</label>
+                <div class="col-xs-12 col-sm-9">
+                  <app-form-select 
+                    [id]="'courier'"
+                    [options]="courierOpts"
+                    (optionSelected)="onOptionsCourierSelected($event)"
+                  ></app-form-select>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div class="form-group">
+                <label for="customer" class="mt-2 mb-4"><strong>Pelanggan</strong></label>
+                <textarea formControlName="customer" id="customer" class="form-control" rows="3" style="height: 94px;"></textarea>
+              </div>
+              <div class="form-group form-row">
+                <label for="phone" class="col-xs-12 col-sm-3 col-form-label">No. HP</label>
+                <div class="col-xs-12 col-sm-9">
+                  <input formControlName="phone" type="text" class="form-control" placeholder="No. HP" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div class="invoice-items">
+          <div class="invoice-items-header">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>NAMA BARANG</th>
+                  <th>QTY</th>
+                  <th>GRAM</th>
+                  <th>HARGA</th>
+                  <th>SUB TOTAL</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="invoice-items-body">
+
+          </div>
+          <div class="invoice-items-footer"></div>
+        </div>
+      </tab>
+    </tabset>
+  </div>
+</app-content-wrapper>

@@ -1,0 +1,52 @@
+<app-content-wrapper 
+  [title]="'Produk'">
+
+  <form class="mb-3" [formGroup]="formProduct" (ngSubmit)="onFormProductSubmit(formProduct.value)">
+    <div class="form-row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="form-group">
+          <label for="name">Nama</label>
+          <input formControlName="name" type="text" class="form-control" id="name" placeholder="Nama">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="form-row">
+          <div class="col-xs-12 col-md-6">
+            <div class="form-group">
+              <label for="price">Harga</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="price">Rp.</span>
+                </div>
+                <input formControlName="price" type="number" class="form-control" id="price" placeholder="Harga">
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <div class="form-group">
+              <label for="weight" class="text-center">Berat</label>
+              <div class="input-group mb-3">
+                <input formControlName="weight" type="number" class="form-control" id="weight" placeholder="Berat">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="weight">Gram</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-success">{{ btnTitle }}</button>
+  </form>
+
+  <app-data-table 
+    [actionColumn]="true" 
+    [limitOptions]="false"
+    [searchOptions]="false"
+    [rows]="rows" 
+    [columns]="columns" 
+    (editClicked)="onBtnUpdateClick($event)"
+    (detailClicked)="onBtnViewClick($event)" 
+    (deleteClicked)="onBtnDeleteClick($event)">
+  </app-data-table>
+</app-content-wrapper>

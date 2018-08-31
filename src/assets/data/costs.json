@@ -1,0 +1,25 @@
+[{
+    "uuid": "qp85gt-ax34rd-lj98uy-c05st1",
+    "name": "Paket Reguler",
+    "bill": 100000,
+    "period": "month",
+    "note": ""
+}, {
+    "uuid": "qp85gt-ax34rd-lj98uy-c05st2",
+    "name": "Privat",
+    "bill": 100000,
+    "period": "session",
+    "note": ""
+}, {
+    "uuid": "qp85gt-ax34rd-lj98uy-c05st3",
+    "name": "Try out",
+    "bill": 100000,
+    "period": "session",
+    "note": ""
+}, {
+    "uuid": "qp85gt-ax34rd-lj98uy-c05st4",
+    "name": "Paket Menghadapi Ujian",
+    "bill": 100000,
+    "period": "session",
+    "note": ""
+}]

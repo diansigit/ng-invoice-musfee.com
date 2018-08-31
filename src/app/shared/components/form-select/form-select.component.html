@@ -1,0 +1,3 @@
+<select class="custom-select" [attr.id]="id" [attr.multiple]="multiple" (change)="onSelectChange($event)">
+  <option *ngFor="let option of options" [attr.selected]="selected === option.value ? true : null" [value]="option.value">{{ option.label }}</option>
+</select>

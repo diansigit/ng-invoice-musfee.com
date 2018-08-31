@@ -1,0 +1,17 @@
+.invoice-items{
+    > div{
+        padding-right: 60px;
+    }
+}
+
+.invoice-items-header{
+    table{
+        > thead{
+            > tr{
+                > th{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

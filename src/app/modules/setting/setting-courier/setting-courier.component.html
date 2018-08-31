@@ -1,0 +1,21 @@
+<app-content-wrapper 
+  [title]="'Jasa Ekspedisi'">
+  <form [formGroup]="formCourier" (ngSubmit)="onFormCourierSubmit(formCourier.value)">
+    <div class="input-group mb-3">
+      <input formControlName="name" type="text" class="form-control" placeholder="Nama jasa pengiriman" aria-label="Nama jasa pengiriman">
+      <div class="input-group-append">
+        <button class="btn btn-success" type="submit">Tambahkan</button>
+      </div>
+    </div>
+  </form>
+
+  <app-data-table 
+    [actionColumn]="true" 
+    [limitOptions]="false"
+    [searchOptions]="false"
+    [rows]="rows" 
+    [columns]="columns" 
+    (editClicked)="onBtnUpdateClick($event)"
+    (deleteClicked)="onBtnDeleteClick($event)">
+  </app-data-table>
+</app-content-wrapper>
